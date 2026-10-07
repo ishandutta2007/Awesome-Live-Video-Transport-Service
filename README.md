@@ -1,245 +1,150 @@
-# Awesome-Live-Video-Transport-Service
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Live Video Transport Service Banner" width="100%" />
+</p>
 
-## Top Live Video Transport Service Ecosystem
+# 📡 Awesome Live Video Transport Service 🎥
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Live-Video-Transport-Service?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Live-Video-Transport-Service?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Live-Video-Transport-Service?color=blue" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🚀 Top Live Video Transport Service Ecosystem & Infrastructure
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**A curated list of commercial SaaS products & open-source GitHub projects for ultra-low latency live video contribution, reliable stream routing, SRT/RIST media gateways, and broadcast IP transport.** 🌐📡
 
-*Focused on Contribution Protocols, Low-Latency Transport & Self-Hosted Media Gateways*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial live video transport platforms** and **open-source projects** that reliably move broadcast-quality video over IP networks — from contribution feeds and remote production workflows to cloud-based routing and distribution without packet loss or latency degradation.
-
-
-
-**Examples** include AWS Elemental MediaConnect, Zixi Cloud, Haivision SRT Gateway, LiveU Cloud, TVU Networks, LTN Global, VideoFlow, Red Bee Media, Grass Valley AMPP, and Synamedia Video Network (the category leaders).
-
-
-
-**Open-source emphasis**: Live video transport is anchored by **SRT** and **RIST** as the two major open protocols for reliable contribution over lossy networks, with **HydraSRT** providing an open-source alternative to Haivision's commercial SRT Gateway . **IRLServer** delivers a full suite of SRT/RIST tooling including OBS plugins and bonding senders . **ts-transformer** brings typed MPEG-TS and KLV metadata transport over SRT, RIST, and RTP . **MediaMTX** provides zero-dependency multi-protocol media routing . **FFmpeg** and **GStreamer** underpin most transport pipelines . This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/)**  
-
-  **AWS's managed live video transport service** — reliable, secure, and flexible transport for broadcast and streaming workflows . **Supports RIST, SRT, Zixi, RTP, and CDI protocols** for contribution and distribution . **Pay-as-you-go pricing** with no upfront commitment . **Best for AWS-native live video contribution** .
-
-
-
-- **[Zixi Cloud](https://zixi.com/)**  
-
-  **The pioneer of reliable internet transport** — content-aware FEC and ARQ with dynamic de-jitter buffers . **SMPTE 2022-7 hitless redundancy and bonding** with primary/standby paths . **Interoperability with 100+ partners and OEMs** across 10,000+ live video channels in 100+ countries  . **Best for enterprise broadcast contribution at scale** .
-
-
-
-- **[Haivision SRT Gateway](https://www.haivision.com/)**  
-
-  **Commercial SRT routing and gateway** — the reference implementation for SRT-based contribution . **SRT protocol originally developed and open-sourced by Haivision**  . **Best for SRT-native workflows** .
-
-
-
-- **[LiveU Cloud](https://www.liveu.tv/)**  
-
-  **Cloud-based live video contribution** — cellular bonding and remote production . **Best for field contribution and remote production** .
-
-
-
-- **[TVU Networks](https://www.tvunetworks.com/)**  
-
-  **Live video transmission and remote production** — cellular bonding and cloud workflows . **Best for newsgathering and live events** .
-
-
-
-- **[LTN Global](https://ltnglobal.com/)**  
-
-  **Managed IP video transport** — reliable contribution and distribution for broadcasters . **Best for global broadcast transport** .
-
-
-
-- **[VideoFlow](https://www.videoflow.tv/)**  
-
-  **Reliable video transport with adaptive rate control** — waived its ARQ patent for RIST industry adoption  . **Best for broadcast-grade reliability** .
-
-
-
-- **[Red Bee Media](https://www.redbeemedia.com/)**  
-
-  **Broadcast managed services** — contribution, distribution, and media management . **Best for managed broadcast services** .
-
-
-
-- **[Grass Valley AMPP](https://www.grassvalley.com/)**  
-
-  **Cloud-native media production platform** — live contribution and remote production . **Best for cloud-based production workflows** .
-
-
-
-- **[Synamedia Video Network](https://www.synamedia.com/)**  
-
-  **Video network solutions** — contribution, distribution, and edge processing . **Best for pay-TV and broadcast operators** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Reliable Transport Gateways
-
-
-
-- **[HydraSRT](https://github.com/streamband/hydra-srt)**  
-
-  **An open-source alternative to Haivision SRT Gateway**, Apache-2.0 licensed . **Supports SRT, UDP, RTMP, RTP, NDI, and YouTube as inputs**; **SRT, UDP, RTMP, and NDI as outputs** . **Built with Elixir/OTP for fault isolation, Rust + GStreamer for media processing, and React for UI** . **Source failover with primary + backup sources, automatic failover, and manual switching** . **SRT authentication with passphrase and stream ID** . **Prometheus metrics and VictoriaMetrics/VictoriaLogs for observability** . **Docker deployment with web UI** . **Beta status but production-oriented architecture**  . **Best for open-source SRT gateway deployment** .
-
-
-
-### SRT/RIST Tooling
-
-
-
-- **[IRLServer](https://github.com/irlserver)**  
-
-  **Suite of open-source tools for IRL streaming with SRT and RIST**, various licenses (AGPL-3.0, MIT, MPL-2.0) . **Key repositories**: **obs-irl-source** — OBS plugin for receiving live IRL streams over SRT, RTMP, RIST, or any FFmpeg-supported protocol (Rust) . **srtla_send** — SRTLA bonding sender in Rust aggregating bandwidth across multiple network paths . **srtla** — SRT transport proxy with link aggregation for connection bonding (C++) . **irl-srt-server** — SRT Live Server for low-latency streaming with SRTLA/Belabox support (C++) . **librist** — customized VideoLAN library for RIST protocol (C)  . **Best for IRL and field contribution with SRT/RIST** .
-
-
-
-- **[ts-transformer](https://github.com/aklofas/ts-transformer)**  
-
-  **Streams live H.264/H.265 video plus typed KLV metadata over unreliable networks in ~30 lines of code**, open-source . **Transport support: SRT, RTP, TCP, UDP, and RIST** . **MPEG-TS with MISB ST 0601 (UAS Datalink), ST 0102 (Security), ST 0605 (Precision Time Stamp), and ST 0903 (VMTI) KLV metadata** . **Rust core with C, Python, and JVM bindings** . **Reconnect, encryption, and typed metadata decoding handled** . **Transmux for editing metadata while copying video/audio byte-for-byte**  . **Best for sensor and ISR video transport** .
-
-
-
-### Multi-Protocol Media Routers
-
-
-
-- **[MediaMTX](https://github.com/bluenviron/mediamtx)**  
-
-  **Ready-to-use zero-dependency live media server and media proxy**, MIT licensed . **Supports Media-over-QUIC, SRT, WebRTC, RTSP, RTMP, LL-HLS, MPEG-TS, and RTP** . **Automatic protocol conversion** — streams are converted from one protocol to another . **Single executable, no dependencies** . **Raspberry Pi camera support** . **Best for edge and simple deployments**  .
-
-
-
-- **[SRS (Simple Realtime Server)](https://github.com/ossrs/srs)**  
-
-  **The leading open-source live streaming server**, MIT/MulanPSL-2.0 licensed with **29,206+ GitHub stars** . **Supports RTMP, WebRTC, HLS, HTTP-FLV, SRT, MPEG-DASH** . **RTMP latency 0.8–3s**; **min-latency mode ~0.1s for video-only** . **Scalable to millions of viewers** . **The de facto open-source Wowza alternative**  . **Best for production live streaming and relay** .
-
-
-
-- **[Janus WebRTC Server](https://github.com/meetecho/janus-gateway)**  
-
-  **General-purpose WebRTC gateway with protocol translation**, GPL-3.0 licensed with **9,159+ GitHub stars** . **Plugin architecture for VideoRoom, SIP, streaming** . **Converts WebRTC streams into legacy formats such as SIP** . **Best for WebRTC-to-legacy protocol bridging**  .
-
-
-
-### Protocol Implementations
-
-
-
-- **[SRT (Secure Reliable Transport)](https://github.com/Haivision/srt)**  
-
-  **Open-source video transport protocol and technology stack**, MPL-2.0 licensed . **Optimizes streaming performance across unpredictable networks** with ARQ, encryption (AES 128/256), and firewall traversal . **The SRT Open Source project driven by Haivision and the SRT Alliance with 100+ industry members**  . **Best for low-latency contribution over lossy networks** .
-
-
-
-- **[libRIST](https://code.videolan.org/rist/librist)**  
-
-  **Open-source implementation of the RIST protocol**, BSD-2-Clause licensed . **RIST Main Profile with SMPTE 2022-1 FEC** for low-latency error recovery . **Firewall traversal (sender only)** . **Supports multicast and bonding** . **Enhanced Profile under development** adds smart bandwidth optimization and hybrid internet/satellite operation  . **Best for vendor-neutral reliable transport** .
-
-
-
-- **[Project-Lightspeed](https://github.com/GRVYDEV/Project-Lightspeed)**  
-
-  **Low-latency video relay and WebRTC live streaming server**, open-source . **OBS streaming backend that ingests media and converts for real-time browser playback** . **Sub-second delay between broadcast source and viewer** . **WebSocket stream orchestrator** for connection handshakes and signaling  . **Best for low-latency OBS-to-browser streaming** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **RTPProxy** — General purpose high performance RTP proxy  .
-
-- **RTP:Engine** — RTP and UDP based media traffic proxy, usable as kernel module  .
-
-- **coturn** — TURN/STUN server for NAT traversal  .
-
-- **eturnal** — Modern scalable STUN/TURN server in Erlang  .
-
-- **ZLMediaKit** — High-performance C++ media server with RTSP, RTMP, HLS, WebRTC, GB28181  .
-
-- **EasyDarwin** — Industrial RTSP streaming server with distributed load balancing  .
-
-- **Restreamer** — Self-hosted multi-destination stream relay  .
-
-
-
-**Frameworks for building custom live video transport solutions**: Combine **SRT** for low-latency contribution over lossy networks with AES encryption and ARQ . Use **RIST** for vendor-neutral reliable transport with SMPTE 2022-1 FEC and multicast/bonding support . Deploy **HydraSRT** for an open-source SRT gateway with failover and observability . Integrate **IRLServer** tooling for SRTLA bonding and OBS SRT/RIST sources . Use **ts-transformer** for sensor video with typed KLV metadata over SRT/RIST . Choose **MediaMTX** or **SRS** for multi-protocol media routing and protocol conversion . Note that true managed live video transport with global infrastructure, automatic scaling, and vendor-supported SLAs (AWS MediaConnect, Zixi, Haivision) remains primarily commercial territory; open-source stacks provide strong protocol implementations, gateway software, and media routing foundations that require integration for complete live video transport.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Live video transport handles broadcast-quality media and may process sensitive content. Self-hosted solutions require proper security hardening, bandwidth planning, and compliance with content regulations.
-
-- **Protocol selection depends on requirements** — SRT for low-latency contribution with ARQ and encryption; RIST for vendor-neutral interoperability with FEC and bonding; Zixi for proprietary content-aware optimization with hitless redundancy . **Vendor interoperability is mandatory but not sufficient** — adaptive encoder rate control and output failover often remain vendor-implementation-dependent .
-
-- **License considerations**: HydraSRT uses Apache-2.0 , SRT uses MPL-2.0, libRIST uses BSD-2-Clause , MediaMTX uses MIT , and ts-transformer is open-source . Verify licensing against your use case before committing.
-
-- The open-source ecosystem provides strong protocol implementations, gateway software, and media routing foundations, but **global infrastructure, automatic scaling, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+📅 **Last updated: October 2026**
 
 ---
 
+### 🔍 Overview & Market Insight
 
+This repository tracks notable **commercial live video transport platforms** and **open-source projects** that reliably move broadcast-quality video over unmanaged IP networks — from field contribution feeds and remote broadcast production (REMI) to cloud media routing and multi-point distribution without packet loss or latency degradation.
 
-**Made for broadcast engineers, media transport specialists, and organizations seeking live video transport sovereignty.**
+> 💡 **Market Size & Industry Dynamics**:  
+> The global live video transport & contribution market is estimated at **$2.5 Billion to $3.8 Billion USD** (growing at a ~14% CAGR driven by IP transformation, REMI remote production, and cloud broadcasting). The market is **moderately fragmented** with major enterprise cloud hyper-scalers (e.g. AWS Elemental MediaConnect) and broadcast infrastructure leaders (Zixi, Haivision, LiveU, Grass Valley, Synamedia) dominating high-reliability tier-1 broadcast feeds, while a vibrant open-source ecosystem (SRT Alliance, libRIST, SRS, MediaMTX) empowers self-hosted media gateways and low-cost field contribution.
 
-Let's make live video transport more open, transparent, and reliable.
+---
+
+## 📑 Table of Contents
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⭐ Star History](#-star-history)
+- [⚠️ Disclaimer](#-disclaimer)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+> 📊 **Market Structure**: Moderately fragmented enterprise sector. Sorted by **Company Scale / Revenue** (descending).
+
+| 🏢 Platform | 💰 Company Scale (Revenue / Valuation) | 💵 Starting Pricing | 🎁 Free Tier / Trial Limit | 📝 Description & Key Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/)** | **$108B/yr** (AWS Division Revenue; Amazon Market Cap $2.3T) | **$0.16/hr** per running flow + data transfer fees | **No free tier** (Pay-as-you-go, no charge when flows are stopped/idle) | ☁️ AWS's managed live video transport service supporting RIST, SRT, Zixi, RTP, and CDI protocols. Best for AWS-native live video contribution. |
+| **[Grass Valley AMPP](https://www.grassvalley.com/)** | **~$545M/yr** (Revenue estimate; $220M strategic refinancing in 2024) | Custom enterprise quote / Pay-as-you-go microservices | **Sales demo request required** (No public self-serve free trial) | 🎥 Cloud-native media production platform providing live contribution and remote production workflows. Best for cloud-based production. |
+| **[Synamedia Video Network](https://www.synamedia.com/)** | **~$350M–$500M/yr** (Revenue estimate; Permira & Sky backed) | Custom enterprise licensing & subscription terms | **Sales demo request required** (No public self-serve free trial) | 📺 Video network solutions for contribution, distribution, and edge processing. Best for pay-TV and broadcast operators. |
+| **[Red Bee Media](https://www.redbeemedia.com/)** | **~$440M/yr** (Wholly owned subsidiary of Ericsson, Market Cap ~$20B+) | Managed services contract / Custom SLA pricing | **Sales consultation required** (No public self-serve free trial) | 🛰️ Broadcast managed services covering contribution, distribution, and media management. Best for managed broadcast services. |
+| **[LiveU Cloud](https://www.liveu.tv/)** | **>$400M** Valuation ($100M–$150M/yr Revenue; Carlyle Group owned) | **$29/month** (LiveU Go Starter tier) | **14-day free trial** for LiveU Studio (or 3-day trial for LiveU Go app) | 📶 Cloud-based live video contribution with cellular bonding and remote production. Best for field contribution and newsgathering. |
+| **[Haivision SRT Gateway](https://www.haivision.com/)** | **~CA$142M/yr** Revenue (~CA$105M Market Cap, TSX: HAI) | Custom software/hardware quote (Free Haivision Play Pro app available) | **Free software trial upon request** (Haivision Hub 360 / AWS Marketplace trial) | ⚡ Commercial SRT routing and gateway; reference implementation by original developers of SRT. Best for SRT-native workflows. |
+| **[LTN Global](https://ltnglobal.com/)** | **~$50M–$150M/yr** (Revenue estimate; Private equity backed) | Custom SLA & managed network service tiering | **Sales demo request required** (No public self-serve free trial) | 🌍 Managed IP video transport delivering reliable contribution and distribution for broadcasters. Best for global broadcast transport. |
+| **[TVU Networks](https://www.tvunetworks.com/)** | **~$50M–$100M/yr** (Revenue estimate; Private entity) | **~18€/hr** (TVU Producer) / **$29/month** (TVU Go Starter) | **3-day free trial** (TVU Go app) or pay-per-use hardware options | 📡 Live video transmission and remote production utilizing cellular bonding and cloud workflows. Best for newsgathering and live events. |
+| **[Zixi Cloud](https://zixi.com/)** | **~$20M–$50M/yr** (Acquired by Clearhaven Partners in 2024) | Custom ZaaS (Zixi-as-a-Service) / AWS Marketplace PAYG | **Free demo / trial upon request** (or 50 GB free trial via partner Red5 Cloud) | 🛡️ Pioneer of reliable internet transport with content-aware FEC, ARQ, and hitless redundancy across 10,000+ channels. Best for enterprise broadcast contribution. |
+| **[VideoFlow](https://www.videoflow.tv/)** | **~$10M–$20M/yr** (Revenue estimate; Private entity) | Custom DVP software license & gateway pricing | **Free demo request required** (No public self-serve free trial) | 🔄 Reliable video transport with adaptive rate control (waived ARQ patent for RIST standard). Best for broadcast-grade reliability. |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+> 🌟 **Sorted by GitHub Star Count** (descending). Each star badge links directly to the repo's stargazers page.
+
+- **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** [![Stars](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social&color=white)](https://github.com/FFmpeg/FFmpeg/stargazers)  
+  ⚡ **The universal multimedia framework**, LGPL/GPL licensed. Decodes, encodes, transmuxes, and transports live SRT, RIST, RTP, RTMP, and UDP video streams across all major platforms. **Best for core pipeline processing and transmuxing.**
+
+- **[SRS (Simple Realtime Server)](https://github.com/ossrs/srs)** [![Stars](https://img.shields.io/github/stars/ossrs/srs?style=social&color=white)](https://github.com/ossrs/srs/stargazers)  
+  🚀 **Industrial-strength live streaming server**, MIT/MulanPSL-2.0 licensed (**29,206+ stars**). High-performance RTMP, WebRTC, HLS, HTTP-FLV, SRT, and MPEG-DASH origin server with sub-second latency capability. **Best for production live streaming and relay.**
+
+- **[GStreamer](https://github.com/GStreamer/gstreamer)** [![Stars](https://img.shields.io/github/stars/GStreamer/gstreamer?style=social&color=white)](https://github.com/GStreamer/gstreamer/stargazers)  
+  🧩 **Flexible pipeline-based multimedia framework**, LGPL licensed (**15,400+ stars**). Underpins broadcast production software with native GStreamer elements for SRT (`srtsink`/`srtsrc`), RIST, RTP, WebRTC, and NDI. **Best for custom media transport pipelines.**
+
+- **[MediaMTX](https://github.com/bluenviron/mediamtx)** [![Stars](https://img.shields.io/github/stars/bluenviron/mediamtx?style=social&color=white)](https://github.com/bluenviron/mediamtx/stargazers)  
+  📦 **Zero-dependency multi-protocol live media server**, MIT licensed (**14,500+ stars**). Supports Media-over-QUIC, SRT, WebRTC, RTSP, RTMP, LL-HLS, MPEG-TS, and RTP with zero external dependencies and automatic protocol conversion. **Best for edge deployments & simple media routing.**
+
+- **[Janus WebRTC Server](https://github.com/meetecho/janus-gateway)** [![Stars](https://img.shields.io/github/stars/meetecho/janus-gateway?style=social&color=white)](https://github.com/meetecho/janus-gateway/stargazers)  
+  🌐 **General-purpose WebRTC gateway**, GPL-3.0 licensed (**9,159+ stars**). Modular C gateway with plugins for WebRTC streaming, SIP signaling, and RTP bridging. **Best for WebRTC-to-legacy broadcast bridging.**
+
+- **[ZLMediaKit](https://github.com/ZLMediaKit/ZLMediaKit)** [![Stars](https://img.shields.io/github/stars/ZLMediaKit/ZLMediaKit?style=social&color=white)](https://github.com/ZLMediaKit/ZLMediaKit/stargazers)  
+  ⚡ **High-performance C++11 media server**, MIT licensed (**8,400+ stars**). Supports RTSP, RTMP, HLS, HTTP-FLV, WebRTC, SRT, and GB28181 with low CPU footprint and multi-thread optimization. **Best for high-concurrency low-latency media routing.**
+
+- **[coturn](https://github.com/coturn/coturn)** [![Stars](https://img.shields.io/github/stars/coturn/coturn?style=social&color=white)](https://github.com/coturn/coturn/stargazers)  
+  🔒 **Free open-source implementation of TURN and STUN Server**, BSD-3-Clause licensed (**8,200+ stars**). Essential VoIP and WebRTC media traffic relay for NAT and firewall traversal across unmanaged networks. **Best for WebRTC NAT traversal.**
+
+- **[SRT (Secure Reliable Transport)](https://github.com/Haivision/srt)** [![Stars](https://img.shields.io/github/stars/Haivision/srt?style=social&color=white)](https://github.com/Haivision/srt/stargazers)  
+  🛡️ **Open-source video transport protocol reference implementation**, MPL-2.0 licensed (**2,700+ stars**). ARQ packet recovery, AES 128/256 encryption, and firewall traversal developed by Haivision & SRT Alliance. **Best for low-latency contribution over lossy IP networks.**
+
+- **[Project-Lightspeed](https://github.com/GRVYDEV/Project-Lightspeed)** [![Stars](https://img.shields.io/github/stars/GRVYDEV/Project-Lightspeed?style=social&color=white)](https://github.com/GRVYDEV/Project-Lightspeed/stargazers)  
+  ⏱️ **Sub-second WebRTC live streaming stack**, GPL-3.0 licensed (**1,400+ stars**). Ingests broadcast streams from OBS via FTL/RTMP and relays sub-second video directly to web browsers. **Best for real-time interactive streaming.**
+
+- **[Restreamer](https://github.com/datarhei/restreamer)** [![Stars](https://img.shields.io/github/stars/datarhei/restreamer?style=social&color=white)](https://github.com/datarhei/restreamer/stargazers)  
+  📡 **Self-hosted live video streaming app**, Apache-2.0 licensed (**1,200+ stars**). Easy UI for receiving live SRT, RTMP, or RTSP feeds and multi-publishing to YouTube, Twitch, and custom CDN endpoints. **Best for self-hosted stream multi-publishing.**
+
+- **[HydraSRT](https://github.com/streamband/hydra-srt)** [![Stars](https://img.shields.io/github/stars/streamband/hydra-srt?style=social&color=white)](https://github.com/streamband/hydra-srt/stargazers)  
+  🔀 **Open-source alternative to Haivision SRT Gateway**, Apache-2.0 licensed. Built with Elixir/OTP + Rust + GStreamer. Features automatic source failover, stream authentication, and Prometheus/VictoriaMetrics telemetry. **Best for open-source SRT gateway routing.**
+
+- **[IRLServer / OBS-IRL Tooling](https://github.com/irlserver/obs-irl-source)** [![Stars](https://img.shields.io/github/stars/irlserver/obs-irl-source?style=social&color=white)](https://github.com/irlserver/obs-irl-source/stargazers)  
+  🎛️ **Suite of open-source tools for IRL streaming with SRTLA bonding**, AGPL-3.0/MIT/MPL-2.0 licensed. Ingests SRT/RIST feeds into OBS, with `srtla_send` aggregating bandwidth across multiple cellular paths. **Best for mobile field bonding contribution.**
+
+- **[ts-transformer](https://github.com/aklofas/ts-transformer)** [![Stars](https://img.shields.io/github/stars/aklofas/ts-transformer?style=social&color=white)](https://github.com/aklofas/ts-transformer/stargazers)  
+  📡 **Streams H.264/H.265 video with typed KLV metadata over SRT/RIST/RTP**, open-source. Rust core with MISB ST 0601/0102/0605/0903 metadata decoding and transmuxing. **Best for defense, drone, and sensor video transport.**
+
+- **[eturnal](https://github.com/processone/eturnal)** [![Stars](https://img.shields.io/github/stars/processone/eturnal?style=social&color=white)](https://github.com/processone/eturnal/stargazers)  
+  🛡️ **Modern, scalable STUN/TURN server**, Apache-2.0 licensed. Written in Erlang for high-concurrency NAT traversal and media relaying. **Best for modern enterprise WebRTC deployments.**
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Please follow these steps to add new SaaS platforms or open-source projects:
+
+1. 🍴 **Fork** the repository.
+2. 📝 **Add/edit** entries in `README.md` maintaining table/formatting consistency.
+3. 🔗 **Include**: Name, official site link, GitHub star badge (if open-source), 1–2 sentence factual summary, and key target use-case.
+4. 📬 **Submit a PR** with a brief summary of the changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+If this curated list helps your engineering workflow, broadcast deployment, or research, consider supporting the project!
+
+- ⭐ **Star** this repository to show your appreciation!
+- 🔀 **Fork** and share it with broadcast engineers & media developers.
+- ☕ **Sponsor / Buy Me a Coffee**: Support ongoing open-source maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+Thank you for building a more open, resilient, and transparent live video transport ecosystem! ❤️
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Live-Video-Transport-Service&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Live-Video-Transport-Service&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated index** for informational purposes and does not constitute an endorsement.
+- Live video transport processes broadcast-quality media and requires proper security hardening, network bandwidth planning, and regulatory compliance.
+- **Protocol Guidance**: Choose **SRT** for low-latency ARQ contribution with AES encryption; **RIST** for vendor-neutral interoperability with SMPTE 2022-1 FEC & bonding; **Zixi** for managed content-aware optimization with hitless redundancy.
+- Always review open-source licenses (MPL-2.0, Apache-2.0, GPL-3.0, MIT, BSD) prior to commercial deployment.
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for broadcast engineers, live streaming developers, and media specialists worldwide.</b>
+</p>

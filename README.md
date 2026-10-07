@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Live-Video-Transport-Service?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Live-Video-Transport-Service?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Live-Video-Transport-Service?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Live-Video-Transport-Service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Live-Video-Transport-Service?color=blue" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -61,7 +61,7 @@ This repository tracks notable **commercial live video transport platforms** and
 
 ## 💻 Open-Source GitHub Projects
 
-> 🌟 **Sorted by GitHub Star Count** (descending). Each star badge links directly to the repo's stargazers page.
+> 🌟 **Sorted by GitHub Stars_Count** (descending). Each Stars_Badge links directly to the repo's stargazers page.
 
 - **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** [![Stars](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social&color=white)](https://github.com/FFmpeg/FFmpeg/stargazers)  
   ⚡ **The universal multimedia framework**, LGPL/GPL licensed. Decodes, encodes, transmuxes, and transports live SRT, RIST, RTP, RTMP, and UDP video streams across all major platforms. **Best for core pipeline processing and transmuxing.**
@@ -113,7 +113,7 @@ Contributions are warmly welcome! Please follow these steps to add new SaaS plat
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/formatting consistency.
-3. 🔗 **Include**: Name, official site link, GitHub star badge (if open-source), 1–2 sentence factual summary, and key target use-case.
+3. 🔗 **Include**: Name, official site link, GitHub Stars_Badge (if open-source), 1–2 sentence factual summary, and key target use-case.
 4. 📬 **Submit a PR** with a brief summary of the changes.
 
 ---

@@ -61,7 +61,7 @@ This repository tracks notable **commercial live video transport platforms** and
 
 ## 💻 Open-Source GitHub Projects
 
-> 🌟 **Sorted by GitHub Stars_Count** (descending). Each Stars_Badge links directly to the repo's stargazers page.
+> 🌟 **Sorted by GitHub_Stars_Count** (descending). Each Stars_Badge links directly to the repo's stargazers page.
 
 - **[FFmpeg](https://github.com/FFmpeg/FFmpeg)** [![Stars](https://img.shields.io/github/stars/FFmpeg/FFmpeg?style=social&color=white)](https://github.com/FFmpeg/FFmpeg/stargazers)  
   ⚡ **The universal multimedia framework**, LGPL/GPL licensed. Decodes, encodes, transmuxes, and transports live SRT, RIST, RTP, RTMP, and UDP video streams across all major platforms. **Best for core pipeline processing and transmuxing.**
@@ -113,7 +113,7 @@ Contributions are warmly welcome! Please follow these steps to add new SaaS plat
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/formatting consistency.
-3. 🔗 **Include**: Name, official site link, GitHub Stars_Badge (if open-source), 1–2 sentence factual summary, and key target use-case.
+3. 🔗 **Include**: Name, official site link, GitHub_Stars_Badge (if open-source), 1–2 sentence factual summary, and key target use-case.
 4. 📬 **Submit a PR** with a brief summary of the changes.
 
 ---
